@@ -1,23 +1,31 @@
 def calculator():
     head = tail = 0
-    print("===================================================================")
-    print("|   + -> pertambah  |   * -> perkalian    |   ^ -> perpangkatan   |")
-    print("|   - -> pengurang  |   / -> perbagian    |   v -> pengakaran     |")
-    print("|   s -> sinus(sin) |   c -> kosinus(cos) |   t -> tangen(tan)    |")
-    print("|   S -> cosecan    |   C -> secan        |   T -> cotangen       |")
-    print("|   % -> persen     |   l -> logaritma    |   = -> hasil          |")
-    print("===================================================================")
-
+    print("============================================================================")
+    print("|   + -> sum           |   * -> multiplication  |   ^ -> power             |")
+    print("|   - -> subtraction   |   / -> division        |   v -> root              |")
+    print("|   s -> sine          |   c -> cosine          |   t -> tangent           |")
+    print("|   S -> cosecant      |   C -> secan           |   T -> cotangent          |")
+    print("|   % -> percent       |   l -> logarithm       |   = -> result            |")
+    print("============================================================================")
+    head = int(input("Input yours first number : "))
     while True:
         choice = input("Pick the math operator : ")
         if choice == "+":
-            pass
+            tail = int(input("Input yours second number : "))
+            print(f"{head} + {tail} = {head + tail}")
+            head += tail
         elif choice == "-":
-            pass
+            tail = int(input("Input yours second number : "))
+            print(f"{head} + {tail} = {head - tail}")
+            head -= tail
         elif choice == "*":
-            pass
+            tail = int(input("Input yours second number : "))
+            print(f"{head} + {tail} = {head * tail}")
+            head *= tail
         elif choice == "/":
-            pass
+            tail = int(input("Input yours second number : "))
+            print(f"{head} + {tail} = {head / tail}")
+            head /= tail
         elif choice == "^":
             pass
         elif choice == "V":
@@ -39,7 +47,7 @@ def calculator():
         elif choice == "L":
             pass
         elif choice == "=":
-            pass
+            break
         else:
             print("Your choice is not in the menu!")
 

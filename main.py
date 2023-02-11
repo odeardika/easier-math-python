@@ -1,9 +1,12 @@
+from calculator import calculator
+
 print("1. Calculator\n2. 2D Figure\n3. 3D Figure\n4. Matrix\n5. History\n6. Exit\n")
 option = input("Enter your choice : ")
 
 while True:
-    if option == "1" :
+    if option == "1":
         print("Calculator")
+        calculator()
     elif option == "2":
         print("2D")
     elif option == "3":
